@@ -37,10 +37,26 @@
         <label for="youare" class="custom-label">You are</label>
         <hr>
         <div class="col-md-10 mb-5" style="padding-top: 0px;">
-          <button type="button" class="radio-button">A Business man</button>
-          <button type="button" class="radio-button">A Salaried Employee</button>
+          <button type="button" class="radio-button active" id="business">A Business man</button>
+          <button type="button" class="radio-button" id="employee">A Salaried Employee</button>
         </div>
       </div>
+    
+      <script>
+        const buttons = document.querySelectorAll('.radio-button');
+    
+        buttons.forEach(button => {
+          button.addEventListener('click', () => {
+            if (!button.classList.contains('active')) {
+              buttons.forEach(btn => btn.classList.remove('active'));
+              button.classList.add('active');
+            } else {
+              button.classList.remove('active');
+            }
+          });
+        });
+      </script>
+      
 
       <div class="form-group">
         <label for="detail" class="custom-label">Few Details about you</label>
@@ -73,17 +89,32 @@
           </div>
         </div>
         <div>
-          <button type="button" class="radio-button">Proprietorship</button>
-          <button type="button" class="radio-button">Partnership</button>
-          <button type="button" class="radio-button">Private Limited</button>
+          <button type="button" class="radio-button active" id="proprietorship">Proprietorship</button>
+          <button type="button" class="radio-button" id="partnership">Partnership</button>
+          <button type="button" class="radio-button" id="private-limited">Private Limited</button>
         </div>
         <br>
         <div>
-          <button type="button" class="radio-button">Public Limited</button>
-          <button type="button" class="radio-button">One Person Company</button>
-          <button type="button" class="radio-button">Limited Liability Partnership</button>
+          <button type="button" class="radio-button" id="public-limited">Public Limited</button>
+          <button type="button" class="radio-button" id="one-person-company">One Person Company</button>
+          <button type="button" class="radio-button" id="limited-liability-partnership">Limited Liability Partnership</button>
         </div>
-      </div>  
+      
+        <script>
+          const buttons = document.querySelectorAll('.radio-button');
+      
+          buttons.forEach(button => {
+            button.addEventListener('click', () => {
+              if (!button.classList.contains('active')) {
+                buttons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+              } else {
+                button.classList.remove('active');
+              }
+            });
+          });
+        </script>
+      
 
       <br>
       <button type="button" class="final-button" >Submit</button>

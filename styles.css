@@ -135,4 +135,13 @@ font-size: larger;
     border-radius: 10px;
     opacity: 1;
     font-size: 14px;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
 }
+
+
+  .radio-button.active {
+    background-color: #007bff;
+    color: #fff;
+  }
