@@ -15,7 +15,6 @@
     align-content: center;
     font-weight: 500;
     font-size: 50px; /* Increase the font size */
-
     
     /* Add any other styles you want for this class */
 }
@@ -35,7 +34,7 @@
     padding-top: 200px; 
     padding: 20px;
     max-width: 700px;
-    max-height: 900px;
+    max-height: 1000px;
     padding-bottom: 200px;
 }
 
@@ -66,6 +65,8 @@
     color: #152745;
     opacity: 1;
     font-size: larger;
+    padding-top: 10px;
+    padding-bottom: 10px;
     /* Add any other styles you want for this custom label */
 }
 
@@ -135,6 +136,7 @@ font-size: larger;
     border-radius: 10px;
     opacity: 1;
     font-size: 14px;
+    letter-spacing: normal;
     padding: 5px 10px;
     border: none;
     cursor: pointer;
